@@ -1,0 +1,27 @@
+{
+  "name": "generator-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./build/index.js -g https://github.com/fjbalsamo/plop-example-template.git -o /home/fjbalsamo/OUT",
+    "clean": "rimraf ./build",
+    "compile": "tsc",
+    "build": "npm run clean && npm run compile",
+    "start": "node ./build/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.7.11",
+    "@types/shelljs": "^0.8.11",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "node-plop": "^0.26.3",
+    "shelljs": "^0.8.5",
+    "ts-command-line-args": "^2.3.1"
+  }
+}
