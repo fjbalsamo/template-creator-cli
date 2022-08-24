@@ -53,4 +53,9 @@ export class ShellScript {
   }) {
     await shell.exec(`${ide} ${appPath}`);
   }
+
+  public static async checkAppPath({ appPath }: { appPath: string }) {
+    const { code } = await shell.exec(`mkdir -p ${appPath}`);
+    return code === 0;
+  }
 }

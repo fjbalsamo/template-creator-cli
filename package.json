@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node ./build/index.js -g https://github.com/fjbalsamo/plop-example-template.git -o /home/fjbalsamo/OUT",
+    "test": "node ./build/index.js -g https://github.com/fjbalsamo/plop-example-template.git -o /home/fjbalsamo/daily",
     "clean": "rimraf ./build",
     "compile": "tsc",
     "build": "npm run clean && npm run compile",

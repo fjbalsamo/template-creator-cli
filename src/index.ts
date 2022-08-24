@@ -19,7 +19,9 @@ import os from "os";
     destinyFolder,
   });
 
-  const install = await ShellScript.npmi({ destinyFolder });
+  await ShellScript.checkAppPath({ appPath: CLI.outputPath });
+
+  await ShellScript.npmi({ destinyFolder });
 
   await NodePlop.prompts({ destinyFolder, name: "tempalte" });
 
