@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "node ./build/index.js -g https://github.com/fjbalsamo/plop-example-template.git -o /home/fjbalsamo/daily",
+  "scripts": {    
     "clean": "rimraf ./build",
     "compile": "tsc",
     "build": "npm run clean && npm run compile",
