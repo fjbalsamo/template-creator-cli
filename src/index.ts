@@ -23,7 +23,7 @@ import os from "os";
 
   await ShellScript.npmi({ destinyFolder });
 
-  await NodePlop.prompts({ destinyFolder, name: "tempalte" });
+  await NodePlop.prompts({ destinyFolder, name: "template" });
 
   await ShellScript.cpApp({ appPath: CLI.outputPath, destinyFolder });
 
